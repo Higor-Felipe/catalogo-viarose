@@ -37,9 +37,17 @@ const produtos = [
      nome: "Sandália Rasteira Pirâmide",
      desc: "Bico Quadrado • Sem salto • Ajuste de fivela • Enfeite de Pirâmide",
      preco: "R$ 29,90",
-     link: "https://s.shopee.com.br/2g5Ihb2Dvi",
+     link: "https://s.shopee.com.br/8pfw3PAxhD",
      imagem: "imagens/sandalia_piramide.jpg",
      alt: "Sandália Rasteira Pirâmide"
+   },
+   {
+     nome: "Sapatilha com Laço",
+     desc: "Enfeite de Laço • Pequeno salto • Palmilha ortopédica",
+     preco: "R$ 44,90",
+     link: "https://s.shopee.com.br/3B1ZMSgY4B",
+     imagem: "imagens/sapatilha.jpg",
+     alt: "Sapatilha com laço"
    },
 ];
 
