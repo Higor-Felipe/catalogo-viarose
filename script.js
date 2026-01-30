@@ -16,7 +16,6 @@ const produtos = [
     imagem: "imagens/sandalia_triangulo.jpeg",
     alt: "Sandália Dourada Salto Brilho"
   },
-  // Adicione mais produtos aqui ↓↓↓
    {
      nome: "Sandália Salto Trança 7 cm",
      desc: "Bico Quadrado • Salto médio 7 cm • Ajuste de fivela • Calcanhar copinho",
@@ -48,6 +47,30 @@ const produtos = [
      link: "https://s.shopee.com.br/3B1ZMSgY4B",
      imagem: "imagens/sapatilha.jpg",
      alt: "Sapatilha com laço"
+   },
+   {
+     nome: "Bota Coturno Verniz",
+     desc: "Com cadarço • Salto de 2 cm • Bico redondo • Ajuste eslástico",
+     preco: "R$ 79,90",
+     link: "https://s.shopee.com.br/3B1ZMSgY4B",
+     imagem: "imagens/bota_verniz.jpeg",
+     alt: "Bota Coturno Verniz"
+   },
+   {
+     nome: "Bota Coturno Fivela",
+     desc: "Com cadarço • Salto de 2 cm • Bico redondo • Ajuste zíper • Enfeite fivela",
+     preco: "R$ 79,90",
+     link: "https://s.shopee.com.br/10x4xuWiBI",
+     imagem: "imagens/bota_fivela.jpg",
+     alt: "Bota Coturno Fivela"
+   },
+   {
+     nome: "Sandália Flat",
+     desc: "Ajuste fivela • Sola de 2 cm • Bico redondo • Enfeite coração",
+     preco: "R$ 39,90",
+     link: "https://s.shopee.com.br/6fbRimhxnh",
+     imagem: "imagens/flat.jpg",
+     alt: "Sandália Flat"
    },
 ];
 
