@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fbfaf6;
+  color: #1a1a1a;
+  line-height: 1.65;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #0f0f0f;
+  color: #f5f5f5;
+  z-index: 1000;
+  border-bottom: 1px solid #2a2a2a;
+  padding: 1rem 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+}
+
+.logo-text {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 2.1rem;
+  letter-spacing: 3px;
+  color: #d4b98a;
+  text-decoration: none;
+}
+
+.search-container {
+  flex: 1;
+  max-width: 420px;
+  margin: 0 3rem;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 0.85rem 1.4rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #1e1e1e;
+  color: #f0f0f0;
+  transition: all 0.25s ease;
+}
+
+#searchInput::placeholder {
+  color: #999;
+}
+
+#searchInput:focus {
+  outline: none;
+  background: #252525;
+  box-shadow: 0 0 0 3px rgba(212, 185, 138, 0.25);
+}
+
+/* Banner com overlay */
+.hero-banner {
+  position: relative;
+  height: 65vh;
+  min-height: 480px;
+  margin-top: 70px;
+  /* espaço para o header fixo */
+  overflow: hidden;
+}
+
+.banner-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(15, 15, 15, 0.35), rgba(15, 15, 15, 0.65));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.banner-content {
+  max-width: 800px;
+  padding: 0 1.5rem;
+}
+
+.banner-content h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: clamp(2.6rem, 6vw, 4.2rem);
+  margin-bottom: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.banner-content p {
+  font-size: clamp(1.1rem, 3vw, 1.45rem);
+  font-weight: 300;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+}
+
+.banner-btn {
+  display: inline-block;
+  padding: 0.9rem 2.5rem;
+  background: #d4b98a;
+  color: #0f0f0f;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.banner-btn:hover {
+  background: #e0c89e;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(212, 185, 138, 0.3);
+}
+
+.main-content {
+  padding: 5rem 5% 8rem;
+  max-width: 1520px;
+  margin: 0 auto;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 4.5rem 3rem;
+}
+
+.product-card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: all 0.4s ease;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.14);
+}
+
+.product-image-wrapper {
+  aspect-ratio: 1 / 1;
+  background: #f8f6f4;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.6s ease;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.05);
+}
+
+.product-details {
+  padding: 1.6rem 1.4rem;
+  text-align: center;
+}
+
+.product-name {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.35rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-desc {
+  font-size: 0.94rem;
+  color: #5c5c5c;
+  margin-bottom: 1rem;
+  min-height: 2.8em;
+}
+
+.product-price {
+  font-size: 1.32rem;
+  font-weight: 600;
+  color: #5c1e2e;
+  margin-bottom: 1.2rem;
+}
+
+.btn-shopee {
+  display: inline-block;
+  padding: 0.8rem 2.2rem;
+  background: #0f0f0f;
+  color: white;
+  font-size: 0.92rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.btn-shopee:hover {
+  background: #d4b98a;
+  color: #0f0f0f;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 1.3rem;
+  color: #777;
+  padding: 8rem 2rem;
+  display: none;
+}
+
+footer {
+  text-align: center;
+  padding: 5rem 2rem 3rem;
+  color: #666;
+  font-size: 0.92rem;
+  border-top: 1px solid #e0dbd0;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 1rem 4%;
+  }
+
+  .search-container {
+    margin: 0 1.5rem;
+    max-width: none;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.2rem 5%;
+  }
+
+  .hero-banner {
+    height: 50vh;
+    min-height: 380px;
+    margin-top: 110px;
+  }
+
+  .banner-content h1 {
+    font-size: 2.6rem;
+  }
+
+  .banner-content p {
+    font-size: 1.2rem;
+  }
+
+  .main-content {
+    padding: 3rem 5% 6rem;
+  }
+
+  .products-grid {
+    gap: 3.5rem 2rem;
+  }
+}
